@@ -28,7 +28,7 @@ export class WithHelpersComponent implements OnInit {
   ngOnInit() {
     this.fields = [
       formly.text("firstname", "Firstname"),
-      formly.required("lastname", "Lastname"),
+      formly.requiredText("lastname", "Lastname"),
       formly.date("birthday", "Geburtstag"),
       formly.number("height", "Height (inches)"),
       formly.radio("gender", "Gender", [
